@@ -6,8 +6,12 @@ function App() {
 console.log(data);
   return (
     <div className='my-12 font-sans'>
+      
       <div className='w-[1110px] mx-auto'>
+        
+        {/* HEADER */}
         <div className='flex justify-between bg-white p-4 text-xs leading-[14.63px] font-[500] '>
+          {/* HEADER LEFT SECTION  */}
           <div className='flex gap-6 items-center '>
             <div className='flex gap-3 items-center'>
               <span>Show</span>
@@ -21,12 +25,17 @@ console.log(data);
               <img src="./assets/search.svg" alt="search" />
               <input placeholder="Search..." type="text" name="search" className='outline-none' /></div>
           </div>
+          {/* HEADER RIGHT SECTION  */}
           <button className='bg-[#00B562] text-[#FFFFFF] py-2 px-3 gap-2 rounded-lg flex items-center'>
             <img src="./assets/plus.svg" alt="add icon" />
             <span>Add Customer</span>
           </button>
         </div>
+
+       {/* TABLE */} 
       <OrderTable orders={data} />
+
+      {/* PAGINATION */}
       <div className='flex p-4 justify-center items-center bg-white text-xs leading-[14.63px] font-[500]'>
         <div className='flex gap-3 text-[#9E9E9E]  items-center'>
           <span className='cursor-pointer'>Previous</span>

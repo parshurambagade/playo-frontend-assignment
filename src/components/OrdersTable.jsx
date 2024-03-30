@@ -18,10 +18,10 @@ function OrderTable({ orders }) {
                     <tr key={order.id} className={(order.id % 2 === 0 ? "bg-white " : "bg-[#F7F7F7] ") + "p-4 grid grid-cols-8 gap-4 w-full justify-between items-center text-sm leading-[17.07px] font-[500]"}>
                         <td className="text-center">{order.trackingId}</td>
                         <td className=""><div className="flex gap-2 justify-normal items-center"><img src={order.product.img} className="h-8 w-8 rounded-lg cursor-pointer" alt={order.product.name} />{order.product.name}</div></td>
-                        <td className="">{order.customer}</td>
-                        <td className="">{order.date}</td>
-                        <td className="">{order.ammount}</td>
-                        <td className="">{order.paymentMode}</td>
+                        <td>{order.customer}</td>
+                        <td>{order.date}</td>
+                        <td>{order.ammount}</td>
+                        <td>{order.paymentMode}</td>
                         <td><span className={(order.status==="Delivered" ? "bg-[#EBF9F1] text-[#1F9254] " : order.status === "Process" ? "bg-[#FEF2E5] text-[#CD6200] " : order.status === "Canceled" ? "bg-[#FBE7E8] text-[#000000] " : "") + "w-max px-3 py-2 rounded-[22px] text-xs"}>{order.status}</span></td>
                         <td className="flex justify-evenly">
                     <img src="./assets/edit.svg" className="h-6 w-6 cursor-pointer" alt="edit" />
