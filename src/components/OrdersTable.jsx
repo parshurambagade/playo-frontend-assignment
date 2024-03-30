@@ -2,7 +2,7 @@ function OrderTable({ orders }) {
     return (
         <table className="text-sm w-full">
             <thead>
-                <tr className="p-4 grid grid-cols-8 w-full justify-between gap-4">
+                <tr className="p-4 grid grid-cols-8 w-full justify-between gap-4 bg-white">
                     <th className="">Tracking ID</th>
                     <th className=" flex justify-between"><span>Product</span><span><img src="./assets/caret-up-down.svg" className="h-4 w-4" alt="caret-up-down" /></span></th>
                     <th className="flex justify-between"><span>Customer</span><span><img src="./assets/caret-up-down.svg" className="h-4 w-4" alt="caret-up-down" /></span></th>
