@@ -5,7 +5,7 @@ import OrderTable from './components/OrdersTable';
 function App() {
 console.log(data);
   return (
-    <div className='my-20 font-sans'>
+    <div className='my-12 font-sans'>
       <div className='w-[1110px] mx-auto'>
         <div className='flex justify-between bg-white p-4 text-xs leading-[14.63px] font-[500] '>
           <div className='flex gap-6 items-center '>
