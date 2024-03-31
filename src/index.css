@@ -1,6 +1,12 @@
+/**
+ * This CSS file contains the styles for the index page of the Playo application.
+ * It includes the Tailwind CSS framework for base, components, and utilities.
+ * The body element has a background color of #f5f5f5.
+**/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 body{
     background-color:#f5f5f5;
